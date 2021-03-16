@@ -3,7 +3,6 @@
     <div class="card">
       <h2>{{ dogInfo.name }}</h2>
       <img v-bind:src="dogInfo.src" alt="" />
-      <button type="button">New dog</button>
     </div>
   </div>
 </template>
@@ -43,24 +42,5 @@ export default {
 }
 .card img {
   width: 100%;
-}
-
-.card button {
-  margin-top: 2em;
-  margin-bottom: 2em;
-  background-color: inherit;
-  padding: 0.5em;
-  border: 1px solid #987284;
-  border-radius: 5px;
-  color: #987284;
-  font-size: 16px;
-  transition: 0.8s;
-}
-
-.card button:hover {
-  opacity: 0.6;
-  background-color: #987284;
-  color: #ffffff;
-  transition: 0.2s;
 }
 </style>
